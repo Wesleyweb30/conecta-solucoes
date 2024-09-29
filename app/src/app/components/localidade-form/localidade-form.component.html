@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <div class="mb-3">
+    <label for="cep" class="form-label">Cep</label>
+    <input formControlName="cep"  type="string" class="form-control" id="cep" placeholder="Digite o cep" required>
+  </div>
+  <div class="mb-3">
+      <label for="logradouro" class="form-label">Logradouro</label>
+      <input  formControlName="logradouro" type="text" class="form-control" id="logradouro" placeholder="Digite o Logradouro" required>
+  </div>
+  <div class="mb-3">
+      <label for="descricao" class="form-label">Bairro</label>
+      <input formControlName="bairro" type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+  </div>
+  <div class="mb-3">
+      <label for="cidade" class="form-label">Cidade</label>
+      <input  formControlName="cidade" type="text" class="form-control" id="cidade" placeholder="Digite a Cidade" required>
+  </div>
+  <div class="mb-3">
+    <label for="estado" class="form-label">Estado</label>
+    <input formControlName="estado" type="text" class="form-control" id="estado" placeholder="Digite o Estado" required>
+</div>
+</form>

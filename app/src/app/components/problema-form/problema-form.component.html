@@ -1,0 +1,26 @@
+<form class="p-3">
+  <div class="mb-3">
+      <label for="titulo" class="form-label">Título do Problema</label>
+      <input type="text" class="form-control" id="titulo" placeholder="Ex: Buraco na rua" required>
+  </div>
+  <div class="mb-3">
+      <label for="descricao" class="form-label">Descrição</label>
+      <textarea class="form-control" id="descricao" rows="3" placeholder="Descreva o problema em detalhes" required></textarea>
+  </div>
+
+  <app-localidade-form (viacep)="printViacep($event)"></app-localidade-form>
+
+  <div class="mb-3">
+    <select class="form-select" >
+      <option selected>Selecione a Situação</option>
+      <option value="pedente">Pedente</option>
+      <option value="andamento">Andamento</option>
+      <option value="concluido">Concluido</option>
+    </select>
+  </div>
+  <div class="mb-3">
+      <label for="imagem" class="form-label">Anexar Imagem (opcional)</label>
+      <input class="form-control" type="file" id="imagem" accept="image/*">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar Problema</button>
+</form>
