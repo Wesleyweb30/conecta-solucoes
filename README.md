@@ -10,7 +10,8 @@ Conecta Soluções é uma plataforma inovadora projetada para fortalecer as comu
 - **Acompanhar Status**: Mantenha-se informado sobre o andamento das solicitações reportadas.
 
 ## Tecnologias
-- **Frontend**: Angular
+- **Angular 18**
+- **Bootstrap 5**
 
 ## Como Contribuir
 1. Faça um fork do projeto.
