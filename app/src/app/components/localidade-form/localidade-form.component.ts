@@ -2,7 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ViacepService } from '../../services/viacep.service';
-import { Viacep } from '../../interfaces/viacep';
+import { Endereco } from '../../interfaces/endereco';
 
 @Component({
   selector: 'app-localidade-form',
@@ -12,8 +12,8 @@ import { Viacep } from '../../interfaces/viacep';
   styleUrl: './localidade-form.component.css'
 })
 export class LocalidadeFormComponent implements OnInit{
-  @Output() viacep = new EventEmitter<FormGroup>();
-  form: FormGroup = new FormGroup({})
+  @Output() endereco = new EventEmitter<Endereco>();
+  form: FormGroup = new FormGroup({});
 
   constructor(private fb: FormBuilder, private viacepService: ViacepService){}
 
@@ -44,13 +44,16 @@ export class LocalidadeFormComponent implements OnInit{
     var cep = this.form.get('cep')?.value;
     this.viacepService.getEnderecoByCep(cep).subscribe({
       next: (res) => {
+        
         this.form.patchValue({
           logradouro: res.logradouro,
           bairro: res.bairro,
           cidade: res.localidade,
           estado: res.estado,
         }),
-        this.viacep.emit(this.form);
+        
+        this.endereco.emit(this.form.value);
+      
       },
       error: () => {
         console.log("error ao buscar o cep")
