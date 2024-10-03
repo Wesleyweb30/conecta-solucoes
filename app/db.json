@@ -1,0 +1,44 @@
+{
+  "problemas": [
+    {
+      "id": 1,
+      "titulo": "Buraco na Rua",
+      "descricao": "Buraco dificultando o transito. Alguem Ajuda Compartilhe.",
+      "situacao": "Pendente",
+      "endereco": {
+        "cep": "50720355",
+        "logradouro": "Rua caratinga",
+        "bairro": "Madalena",
+        "cidade": "Recife",
+        "estado": "Pernambuco"
+      },
+      "imagem": ""
+    },
+    {
+      "titulo": "asdasdasdd",
+      "descricao": "sadadasdasd",
+      "situacao": "andamento",
+      "endereco": {
+        "cep": "50720355",
+        "logradouro": "Rua Caratinga",
+        "bairro": "Madalena",
+        "cidade": "Recife",
+        "estado": "Pernambuco"
+      },
+      "id": 2
+    },
+    {
+      "titulo": "Vazamento de agua",
+      "descricao": "A rua está cheio de água, muito desperdício impossível não notar.",
+      "situacao": "andamento",
+      "endereco": {
+        "cep": "50720355",
+        "logradouro": "Rua Caratinga",
+        "bairro": "Madalena",
+        "cidade": "Recife",
+        "estado": "Pernambuco"
+      },
+      "id": 3
+    }
+  ]
+}

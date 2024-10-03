@@ -5,6 +5,6 @@ export interface Problema {
     descricao: string;
     situacao: string;
     endereco: Endereco;
-    image: string;
+    imagem: string;
 
 }

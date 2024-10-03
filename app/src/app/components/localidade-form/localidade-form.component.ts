@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
-import { ViacepService } from '../../services/viacep.service';
+import { ViacepService } from '../../services/viacep/viacep.service';
 import { Endereco } from '../../interfaces/endereco';
 
 @Component({
