@@ -16,4 +16,8 @@ export class ProblemaService {
   cadastrar(problema: Problema): Observable<Problema>{
     return this.http.post<Problema>(this.problemaUrlApi, problema);
   }
+
+  listar(){
+    return this.http.get<Problema[]>(this.problemaUrlApi);
+  }
 }

@@ -48,7 +48,7 @@ export class LocalidadeFormComponent implements OnInit{
         this.form.patchValue({
           logradouro: res.logradouro,
           bairro: res.bairro,
-          cidade: res.localidade,
+          localidade: res.localidade,
           estado: res.estado,
         }),
         

@@ -31,7 +31,7 @@ export class ProblemaFormComponent implements OnInit{
         cep: ['', [Validators.required]],
         logradouro: ['', [Validators.required]],
         bairro: ['', [Validators.required]],
-        cidade: ['', [Validators.required]],
+        localidade: ['', [Validators.required]],
         estado: ['', [Validators.required]],
       }),
     });

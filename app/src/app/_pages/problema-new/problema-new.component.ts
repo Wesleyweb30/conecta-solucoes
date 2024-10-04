@@ -24,17 +24,11 @@ export class ProblemaNewComponent {
           this.router.navigate(['/'])
         },
         error: (error) => {
-          console.error("cadastro não efetuado")
+          console.error("cadastro não efetuado" , error)
         } 
       }
     )
   }
-
-  //Limpar campo
-
-  //Redirecionar
-
-  //cadastrar
 
 
 }

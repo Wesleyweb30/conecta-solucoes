@@ -1,0 +1,25 @@
+<div class="card mb-5" style="max-width: 600px; margin: 0 auto;">
+    <a style="text-decoration: none; color: rgba(0, 0, 0, 0.864);">
+
+        <div class="d-flex justify-content-between " style="padding: 0px 5px;">
+            <p>Local: {{problemaDados?.endereco?.localidade}} | Madalena</p>
+            <p>Data: 21-07-1998</p>
+        </div>
+        <img src="https://placehold.co/600x400" class="card-img-top">
+        <div class="card-body">
+            
+        <h5 class="card-title">{{problemaDados?.titulo}}</h5>
+        <p class="card-text">{{problemaDados?.descricao}}</p>
+        <a href="card-link">Saiba Mais Detalhes</a>
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">Situação: {{problemaDados?.situacao}} | <span>Urgência</span></li>
+        <li class="list-group-item">Endereço: {{problemaDados?.endereco?.logradouro}}</li>
+        <li class="list-group-item"></li>
+        </ul>
+        <div class="card-body">
+        <a href="#" class="card-link">Alertar</a>
+        <a href="#" class="card-link">Compartilhar</a>
+        </div>
+    </a>
+</div>
