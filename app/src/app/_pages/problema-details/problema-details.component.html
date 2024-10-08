@@ -1,1 +1,21 @@
-<p>problema-details works!</p>
+<section class="container row p-2" style="margin: 0px auto;">
+    <div class="p-0 col">
+        <h1>{{problema?.titulo}}</h1>
+        <p>{{problema?.descricao}}</p>
+        <p class="bg-danger">{{problema?.situacao}}</p>
+        <h5>Endereço:</h5>
+        <p>Estado: {{problema?.endereco?.estado}}</p>
+        <p>Cidade: {{problema?.endereco?.localidade}}</p>
+        <p>Cep: {{problema?.endereco?.cep}}</p>
+        <p>Bairro: {{problema?.endereco?.bairro}}</p>
+        <p>Logradouro: {{problema?.endereco?.logradouro}}</p>
+        <div class="d-flex gap-3">
+            <a href="#" class="card-link">Alertar</a>
+            <a href="#" class="card-link">Compartilhar</a>
+            <a href="#" class="card-link">Ver Mais Problemas</a>
+        </div>
+    </div>
+    <div class="p-0 col-md-4">
+        <img  style="max-width: 100%;" src="https://placehold.co/600x480" alt={{problema?.titulo}}>
+    </div>
+</section>

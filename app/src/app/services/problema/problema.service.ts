@@ -20,4 +20,8 @@ export class ProblemaService {
   listar(){
     return this.http.get<Problema[]>(this.problemaUrlApi);
   }
+
+  problemaPorId(id: number): Observable<Problema>{
+    return this.http.get<Problema>(this.problemaUrlApi+id);
+  }
 }

@@ -10,7 +10,7 @@
             
         <h5 class="card-title">{{problemaDados?.titulo}}</h5>
         <p class="card-text">{{problemaDados?.descricao}}</p>
-        <a href="card-link">Saiba Mais Detalhes</a>
+        <a  routerLink="problema/{{problemaDados!.id}}">Saiba Mais Detalhes</a>
         </div>
         <ul class="list-group list-group-flush">
         <li class="list-group-item">Situação: {{problemaDados?.situacao}} | <span>Urgência</span></li>
@@ -18,8 +18,8 @@
         <li class="list-group-item"></li>
         </ul>
         <div class="card-body">
-        <a href="#" class="card-link">Alertar</a>
-        <a href="#" class="card-link">Compartilhar</a>
+            <a href="#" class="card-link">Alertar</a>
+            <a href="#" class="card-link">Compartilhar</a>
         </div>
     </a>
 </div>
