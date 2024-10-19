@@ -21,7 +21,7 @@ Conecta Soluções é uma plataforma inovadora projetada para fortalecer as comu
 5. Abra um Pull Request.
 
 ## Licença
-Este projeto está sob a licença [Nome da Licença].
+Este projeto está sob a licença [MIT].
 
 ## Contato
 wesleyweb3.0@gmail.com
